@@ -5,19 +5,11 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class Login {
+public class menu {
 
-    @GetMapping("/login")
-    public String login(Model model){
+    @GetMapping("/menu")
+    public String menu(Model model){
         model.addAttribute("mensaje","Hola Spring ");
-        return "login";
+        return "common/menu";
     }
-
-    @GetMapping("/index")
-    public String index(Model model){
-        model.addAttribute("mensaje","Hola Spring ");
-        return "index";
-    }
-
-
 }
