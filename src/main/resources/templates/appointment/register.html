@@ -5,7 +5,7 @@
         <form th:action="@{/appointments/save}"
               th:object="${appointment}"
               method="post"
-              hx-post="@{/appointments/register}"
+              hx-post="/appointments/save"
               hx-target="#contenido"
               hx-swap="innerHTML"
               class="mt-4">
